@@ -2,7 +2,7 @@
   {
     "title": "Fly Away",
     "artist":"GLDN",
-    "feat": "",
+    "feat": null,
     "duration":"3:36",
     "releaseDate":"2018-06-01",
     "album":"Moonlight EP",
@@ -14,13 +14,13 @@
     "feat": "Tess Comrie",
     "duration":"3:44",
     "releaseDate":"2018-05-30",
-    "album":"",
+    "album":null,
     "url": "https://www.youtube.com/watch?v=66vdaLrxN8s"
   },
   {
     "title": "Everybody Hates Me",
     "artist":"The Chainsmokers",
-    "feat": "",
+    "feat": null,
     "duration":"2:53",
     "releaseDate":"2018-04-16",
     "album":"Sick Boy... Everybody Hates Me",
@@ -32,7 +32,7 @@
     "feat": "Logic",
     "duration":"3:25",
     "releaseDate":"2018-04-06",
-    "album":"",
+    "album":null,
     "url": "https://www.youtube.com/watch?v=_qQsPw4CqUI"
   },
   {
@@ -41,7 +41,7 @@
     "feat": "Selena Gomez",
     "duration":"3:18",
     "releaseDate":"2017-11-18",
-    "album":"",
+    "album":null,
     "url": "https://www.youtube.com/watch?v=cH4E_t3m3xM"
   },
   {
@@ -50,7 +50,7 @@
     "feat": "Travis Scott, Camila Cabello & Quavo",
     "duration":"3:45",
     "releaseDate":"2017-11-23",
-    "album":"",
+    "album":null,
     "url": "https://www.youtube.com/watch?v=gVUwCQ7LGcs"
   },
   {
@@ -59,7 +59,7 @@
     "feat": "Coldplay",
     "duration":"4:07",
     "releaseDate":"2017-1102-22",
-    "album":"",
+    "album":null,
     "url": "https://www.youtube.com/watch?v=FM7MFYoylVs"
   },
   {
@@ -68,7 +68,7 @@
     "feat": "Coldplay",
     "duration":"4:07",
     "releaseDate":"2017-02-22",
-    "album":"",
+    "album":null,
     "url": "https://www.youtube.com/watch?v=FM7MFYoylVs"
   },
   {
@@ -77,7 +77,7 @@
     "feat": "Demi Lovato",
     "duration":"3:34  ",
     "releaseDate":"2018-05-31",
-    "album":"",
+    "album":null,
     "url": "https://www.youtube.com/watch?v=FM7MFYoylVs"
   }
 
