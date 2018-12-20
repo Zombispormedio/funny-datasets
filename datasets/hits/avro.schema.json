@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "fields": [
+    { "name": "title", "type": "string" },
+    { "name": "artist", "type": "string" },
+    { "name": "feat", "type": ["string", "null"] },
+    { "name": "duration", "type": "string" },
+    { "name": "releaseDate", "type": "string" },
+    { "name": "album", "type": ["string", "null"] },
+    { "name": "url", "type": "string" }
+  ]
+}
