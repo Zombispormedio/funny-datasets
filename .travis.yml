@@ -1,0 +1,19 @@
+language: node_js
+branches:
+  only:
+    - master
+node_js:
+ - "lts/*"
+install:
+ - npm install
+script:
+  - npm run build
+deploy:
+  provider: releases
+  api_key: $GITHUB_OAUTH
+  file_glob: true
+  file: dist/*
+  skip_cleanup: true
+  on:
+    tags: true
+  
