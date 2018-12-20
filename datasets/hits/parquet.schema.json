@@ -1,0 +1,10 @@
+{
+  "title": {
+    "type": "UTF8"
+  },
+  "artist": { "type": "UTF8" },
+  "feat": { "type": "UTF8", "optional": true },
+  "releaseDate": { "type": "UTF8" },
+  "album": { "type": "UTF8", "optional": true },
+  "url": { "type": "UTF8" }
+}
