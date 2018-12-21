@@ -1,3 +1,3 @@
-const fs = require('fs-extra');
+const fs = require('fs-extra')
 
-fs.ensureDir("dist")
+fs.ensureDir('dist')

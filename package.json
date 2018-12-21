@@ -1,35 +1,25 @@
 {
   "name": "funny-datasets",
-  "version": "0.0.1",
   "description": "Funny datasets to getting started with data processing",
+  "homepage": "https://github.com/Zombispormedio/funny-datasets#readme",
+  "version": "0.0.5",
   "main": "index.js",
-  "scripts": {
-    "dataset-avro": "node scripts/format/avro",
-    "dataset-parquet": "node scripts/format/parquet",
-    "dataset-csv": "node scripts/format/csv",
-    "dataset-messagepack": "node scripts/format/messagepack",
-    "check-avro": "node scripts/reverse/avro",
-    "check-parquet": "node scripts/reverse/parquet",
-    "check-messagepack": "node scripts/reverse/messagepack",
-    "build-datasets": "concurrently \"npm:dataset-*\"",
-    "reverse-datasets": "concurrently \"npm:check-*\"",
-    "compress": "node scripts/snappy",
-    "uncompress": "node scripts/reverse/snappy",
-    "build-init": "node scripts/build-init",
-    "build": "npm run build-init && npm run build-datasets && npm run compress",
-    "reverse": "npm run reverse-datasets && npm run uncompress"
+  "author": {
+    "name": "Xavier Serrano"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Zombispormedio/funny-datasets.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Zombispormedio/funny-datasets/issues"
   },
-  "homepage": "https://github.com/Zombispormedio/funny-datasets#readme",
-  "devDependencies": {},
+  "keywords": [
+    "avro",
+    "csv",
+    "datasets",
+    "parquet"
+  ],
   "dependencies": {
     "JSONStream": "^1.3.5",
     "avsc": "^5.4.7",
@@ -39,5 +29,68 @@
     "parquetjs": "^0.10.0",
     "snappy": "^6.1.1",
     "what-the-pack": "^1.1.7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.2.1",
+    "commitlint-config-gitmoji": "^1.0.1",
+    "finepack": "^2.8.2",
+    "git-authors-cli": "^1.0.8",
+    "husky": "^1.2.1",
+    "jest": "^23.6.0",
+    "lint-staged": "^8.1.0",
+    "prettier-standard": "^8.0.1",
+    "standard": "^12.0.1",
+    "standard-version": "^4.4.0"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "npm run build-init && npm run build-datasets && npm run compress",
+    "build-datasets": "concurrently \"npm:dataset-*\"",
+    "build-init": "node scripts/build-init",
+    "check-avro": "node scripts/reverse/avro",
+    "check-messagepack": "node scripts/reverse/messagepack",
+    "check-parquet": "node scripts/reverse/parquet",
+    "compress": "node scripts/snappy",
+    "dataset-avro": "node scripts/format/avro",
+    "dataset-csv": "node scripts/format/csv",
+    "dataset-messagepack": "node scripts/format/messagepack",
+    "dataset-parquet": "node scripts/format/parquet",
+    "lint": "standard",
+    "precommit": "lint-staged",
+    "pretty": "prettier-standard index.js {lib,scripts}/**/*.js --print-width 100",
+    "reverse": "npm run reverse-datasets && npm run uncompress",
+    "reverse-datasets": "concurrently \"npm:check-*\"",
+    "uncompress": "node scripts/reverse/snappy"
+  },
+  "license": "ISC",
+  "commitlint": {
+    "extends": [
+      "./node_modules/commitlint-config-gitmoji"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "package.json": [
+        "finepack",
+        "git add"
+      ],
+      "*.js": [
+        "prettier-standard",
+        "git add"
+      ]
+    }
+  },
+  "standard-version": {
+    "scripts": {
+      "prechangelog": "git-authors-cli"
+    }
   }
 }
