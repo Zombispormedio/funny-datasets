@@ -2,6 +2,56 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.4"></a>
+## 1.0.4 (2018-12-21)
+
+
+
+<a name="1.0.0"></a>
+# 1.0.0 (2018-12-21)
+
+
+
+<a name="0.0.5"></a>
+## 0.0.5 (2018-12-21)
+
+
+
+<a name="0.0.4"></a>
+## 0.0.4 (2018-12-21)
+
+
+
+<a name="0.0.3"></a>
+## 0.0.3 (2018-12-21)
+
+
+
+<a name="0.0.2"></a>
+## 0.0.2 (2018-12-20)
+
+
+
+<a name="0.0.1"></a>
+## 0.0.1 (2018-12-20)
+
+
+
+<a name="1.0.3"></a>
+## <small>1.0.3 (2018-12-21)</small>
+
+* :bookmark: release: v1.0.1 ([7d97b14](https://github.com/Zombispormedio/funny-datasets/commit/7d97b14))
+* :heavy_plus_sign: dependency: git-dirty ([7cbd0a9](https://github.com/Zombispormedio/funny-datasets/commit/7cbd0a9))
+* :pencil2: fix typo ([2e28325](https://github.com/Zombispormedio/funny-datasets/commit/2e28325))
+* :recycle: improvement: include bumped into project ([46bf5c2](https://github.com/Zombispormedio/funny-datasets/commit/46bf5c2))
+* chore(release): 1.0.2 ([e00d141](https://github.com/Zombispormedio/funny-datasets/commit/e00d141))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 <a name="1.0.2"></a>
 ## 1.0.2 (2018-12-21)
 
