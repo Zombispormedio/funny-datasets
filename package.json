@@ -2,7 +2,7 @@
   "name": "funny-datasets",
   "description": "Funny datasets to getting started with data processing",
   "homepage": "https://github.com/Zombispormedio/funny-datasets#readme",
-  "version": "0.2.0",
+  "version": "0.0.5",
   "main": "index.js",
   "author": {
     "name": "Xavier Serrano"
