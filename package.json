@@ -70,7 +70,7 @@
     "release:patch": "bumped release patch",
     "reverse": "npm run reverse-datasets && npm run uncompress",
     "reverse-datasets": "concurrently \"npm:check-*\"",
-    "standard-verion": "standard-version",
+    "standard-version": "standard-version",
     "uncompress": "node scripts/reverse/snappy"
   },
   "license": "ISC",
