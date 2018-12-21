@@ -1,0 +1,11 @@
+{
+    "title": { "type": "UTF8" },
+    "genre": { "type": "UTF8" },
+    "author": { "type": "UTF8" },
+    "volumes": { "type": "INT32" },
+    "startDate": { "type": "UTF8" },
+    "endDate": { "type": "UTF8" },
+    "hasAnime": { "type": "BOOLEAN" },
+    "url": { "type": "UTF8" }
+  }
+  

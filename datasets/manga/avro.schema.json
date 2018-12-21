@@ -1,0 +1,14 @@
+{
+    "type": "record",
+    "fields": [
+      { "name": "title", "type": "string" },
+      { "name": "genre", "type": "string" },
+      { "name": "author", "type": "string" },
+      { "name": "volumes", "type": "int" },
+      { "name": "startDate", "type": "string" },
+      { "name": "endDate", "type": "string" },
+      { "name": "hasAnime", "type": "boolean" },
+      { "name": "url", "type": "string" }
+    ]
+  }
+  

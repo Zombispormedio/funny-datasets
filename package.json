@@ -38,7 +38,6 @@
     "fs-extra": "^7.0.1",
     "parquetjs": "^0.10.0",
     "snappy": "^6.1.1",
-    "split2": "^3.1.0",
     "what-the-pack": "^1.1.7"
   }
 }
