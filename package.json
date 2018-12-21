@@ -45,6 +45,7 @@
     "commitlint-config-gitmoji": "^1.0.1",
     "finepack": "^2.8.2",
     "git-authors-cli": "^1.0.8",
+    "git-dirty": "^1.0.2",
     "husky": "^1.2.1",
     "jest": "^23.6.0",
     "lint-staged": "^8.1.0",
