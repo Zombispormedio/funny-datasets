@@ -1,14 +1,7 @@
-<a name="0.2.0"></a>
-## 0.2.0 (2018-12-21)
+<a name="1.0.0"></a>
+## 1.0.0 (2018-12-21)
 
-* :heavy_plus_sign: Add linters ([252bfb7](https://github.com/Zombispormedio/funny-datasets/commit/252bfb7))
-* :sparkles: support all datasets ([27d41fd](https://github.com/Zombispormedio/funny-datasets/commit/27d41fd))
-
-
-
-<a name="0.1.0"></a>
-## 0.1.0 (2018-12-21)
-
+* :bookmark: release: v0.2.0 ([46414e7](https://github.com/Zombispormedio/funny-datasets/commit/46414e7))
 * :heavy_plus_sign: Add linters ([252bfb7](https://github.com/Zombispormedio/funny-datasets/commit/252bfb7))
 * :sparkles: support all datasets ([27d41fd](https://github.com/Zombispormedio/funny-datasets/commit/27d41fd))
 
