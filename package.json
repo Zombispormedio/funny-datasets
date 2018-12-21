@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",
+    "bumped": "^0.10.11",
     "commitlint-config-gitmoji": "^1.0.1",
     "finepack": "^2.8.2",
     "git-authors-cli": "^1.0.8",
@@ -68,7 +69,16 @@
   "commitlint": {
     "extends": [
       "./node_modules/commitlint-config-gitmoji"
-    ]
+    ],
+    "rules": {
+      "subject-case": [
+        2,
+        "always",
+        [
+          "lowerCase"
+        ]
+      ]
+    }
   },
   "husky": {
     "hooks": {

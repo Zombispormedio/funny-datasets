@@ -1,18 +1,25 @@
-const fs = require('fs')
+const fs = require('fs-extra')
 const path = require('path')
-const { Transform } = require('stream')
-const snappy = require('snappy')
-const compress = () =>
-  new Transform({
-    transform (chunk, enconding, callback) {
-      snappy.compress(chunk, callback)
-    }
-  })
-;['hits.parquet', 'hits.avro', 'hits.pack', 'hits.csv'].forEach(filename => {
-  const ext = path.extname(filename)
-  const base = path.basename(filename, ext)
-  fs
-    .createReadStream(`dist/${filename}`)
-    .pipe(compress())
-    .pipe(fs.createWriteStream(`dist/${base}.snappy${ext}`))
-})
+const { snappy, finished } = require('../lib')
+
+const DST_DIR = path.resolve(process.cwd(), 'dist')
+;(async () => {
+  try {
+    const files = await fs.readdir(DST_DIR)
+
+    await Promise.all(
+      files.map(filename => {
+        const ext = path.extname(filename)
+        const base = path.basename(filename, ext)
+        return finished(
+          snappy.compress({
+            src: path.resolve(DST_DIR, filename),
+            dst: path.resolve(DST_DIR, `${base}.snappy${ext}`)
+          })
+        )
+      })
+    )
+  } catch (error) {
+    console.error(error)
+  }
+})()
